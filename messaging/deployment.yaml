@@ -20,10 +20,10 @@ spec:
         kubernetes.io/os: linux
       restartPolicy: Always
       containers:
-      - image: tracing/messaging:1
-        name: student-app
+      - image: demospringapp/messaging:1
+        name: messaging-app
         ports:
-        - containerPort: 8082
+        - containerPort: 8083
         env:
           - name: RABBITMQ_HOST
             value: 10.96.51.88
