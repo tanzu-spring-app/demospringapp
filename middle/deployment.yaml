@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: tracing-app
+  name: tracing-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tracing-app
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: tracing-app
+    spec:
+      dnsPolicy: ClusterFirst
+      nodeSelector:
+        kubernetes.io/os: linux
+      restartPolicy: Always
+      containers:
+      - image: tracing/tracing:1
+        name: tracing-app
+        ports:
+        - containerPort: 8081
+        env:
+          - name: STUDENT_HOST
+            value: 10.96.96.12
+          - name: STUDENT_PORT
+            value: "8081"
+          - name: EMPLOYEE_HOST
+            value: 10.96.241.199
+          - name: EMPLOYEE_PORT
+            value: "8082"
+          - name: MESSAGE_HOST
+            value: 10.96.189.45
+          - name: MESSAGE_PORT
+            value: "8083"
+
+        resources: {}
+status: {}

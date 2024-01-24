@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: messaging-app
+  name: messaging-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: messaging-app
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: messaging-app
+    spec:
+      dnsPolicy: ClusterFirst
+      nodeSelector:
+        kubernetes.io/os: linux
+      restartPolicy: Always
+      containers:
+      - image: tracing/messaging:1
+        name: student-app
+        ports:
+        - containerPort: 8082
+        env:
+          - name: RABBITMQ_HOST
+            value: 10.96.51.88
+          - name: RABBITMQ_PORT
+            value: "5672"
+        resources: {}
+status: {}

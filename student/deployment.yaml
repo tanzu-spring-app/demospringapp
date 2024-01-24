@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: student-app
+  name: student-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: student-app
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: student-app
+    spec:
+      dnsPolicy: ClusterFirst
+      nodeSelector:
+        kubernetes.io/os: linux
+      restartPolicy: Always
+      containers:
+      - image: demospringapp/student:1
+        name: student-app
+        ports:
+        - containerPort: 8081
+        env:
+          - name: DB_HOST
+            value: 10.96.253.49
+          - name: DB_PORT
+            value: "3306"
+          - name: DB_USERNAME
+            value: root
+          - name: DB_PASSWORD
+            value: root
+          - name: EUREKA_HOST
+            value: 10.96.184.127
+          - name: EUREKA_PORT
+            value: "8761"
+        resources: {}
+status: {}
