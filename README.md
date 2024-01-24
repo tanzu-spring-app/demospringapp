@@ -33,24 +33,24 @@ Demo Project For Spring Application Discovery in Tanzu
 
 	docker build -t demospringapp/student:1 .
 	kind load docker-image demospringapp/student:1
-	## change - ip in deployment.yaml
+	- change - ip in deployment.yaml
 	kubectl apply -f deployment.yaml
 	kubectl expose deployment student-app --type=ClusterIP --port=8081 --target-port=8081
 
 	docker build -t demospringapp/employee:1 .
 	kind load docker-image demospringapp/employee:1
-	## change - ip in deployment.yaml
+	- change - ip in deployment.yaml
 	kubectl apply -f deployment.yaml
 	kubectl expose deployment employee-app --type=ClusterIP --port=8082 --target-port=8082
 
 	docker build -t demospringapp/messaging:1 .
 	kind load docker-image demospringapp/messaging:1
-	## change - ip in deployment.yaml
+	- change - ip in deployment.yaml
 	kubectl apply -f deployment.yaml
 	kubectl expose deployment messaging-app --type=ClusterIP --port=8083 --target-port=8083
 
 	docker build -t demospringapp/demospringapp:1 .
 	kind load docker-image demospringapp/demospringapp:1
-	## change - ip in deployment.yaml
+	- change - ip in deployment.yaml
 	kubectl apply -f deployment.yaml
 	kubectl expose deployment demospringapp --type=LoadBalancer --port=8080 --target-port=8080
