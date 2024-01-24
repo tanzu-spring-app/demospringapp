@@ -2,28 +2,28 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: tracing-app
-  name: tracing-app
+    app: demospringapp
+  name: demospringapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: tracing-app
+      app: demospringapp
   strategy: {}
   template:
     metadata:
       labels:
-        app: tracing-app
+        app: demospringapp
     spec:
       dnsPolicy: ClusterFirst
       nodeSelector:
         kubernetes.io/os: linux
       restartPolicy: Always
       containers:
-      - image: tracing/tracing:1
-        name: tracing-app
+      - image: demospringapp/demospringapp:1
+        name: demospringapp
         ports:
-        - containerPort: 8081
+        - containerPort: 8080
         env:
           - name: STUDENT_HOST
             value: 10.96.96.12
