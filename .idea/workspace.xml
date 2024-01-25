@@ -5,17 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="316d5220-c3d7-4948-88ec-e617578b11de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/apigateway/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigateway/deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigateway/src/main/java/com/demospring/apigateway/api/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigateway/src/main/java/com/demospring/apigateway/api/service/GatewayService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway/src/main/java/com/demospring/apigateway/api/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/src/main/java/com/demospring/apigateway/api/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway/src/main/java/com/demospring/apigateway/api/controller/FeignController.java" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/src/main/java/com/demospring/apigateway/api/controller/FeignController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway/src/main/java/com/demospring/apigateway/api/controller/MessagingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/src/main/java/com/demospring/apigateway/api/controller/MessagingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway/src/main/java/com/demospring/apigateway/api/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/src/main/java/com/demospring/apigateway/api/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway/src/main/java/com/demospring/apigateway/api/controller/WebClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/src/main/java/com/demospring/apigateway/api/controller/WebClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceRegistry/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceRegistry/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apigateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/employee/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feignclient/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/feignclient/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/messaging/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/messaging/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/student/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/student/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/.idea/webclient.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-callee/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-callee/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-callee/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-callee/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-callee/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-callee/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-callee/src/main/java/com/example/springbootwebclient/callee/SpringbootWebclientCalleeApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-callee/src/main/java/com/example/springbootwebclient/callee/controller/CalleeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-callee/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-callee/src/test/java/com/example/springbootwebclient/callee/SpringbootWebclientCalleeApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-caller/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-caller/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-caller/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-caller/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-caller/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-caller/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-caller/src/main/java/com/example/springboot/webclient/caller/Callee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-caller/src/main/java/com/example/springboot/webclient/caller/SpringbootWebclientCallerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-caller/src/main/java/com/example/springboot/webclient/caller/controller/CallerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-caller/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webclient/springboot-webclient-caller/src/test/java/com/example/springboot/webclient/caller/SpringbootWebclientCallerApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +142,7 @@
       <updated>1706100011474</updated>
       <workItem from="1706100012550" duration="97000" />
       <workItem from="1706101461233" duration="3360000" />
-      <workItem from="1706146222235" duration="5387000" />
+      <workItem from="1706146222235" duration="10559000" />
     </task>
     <servers />
   </component>
