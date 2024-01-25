@@ -37,6 +37,10 @@ spec:
             value: 10.96.189.45
           - name: MESSAGE_PORT
             value: "8083"
+          - name: FEIGN_HOST
+            value: 10.96.72.84
+          - name: FEIGN_PORT
+            value: "8084"
 
         resources: {}
 status: {}
