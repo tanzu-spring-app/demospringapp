@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: feign-and-web-client
+  name: feign-and-web-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: feign-and-web-client
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: feign-and-web-client
+    spec:
+      dnsPolicy: ClusterFirst
+      nodeSelector:
+        kubernetes.io/os: linux
+      restartPolicy: Always
+      containers:
+      - image: demospringapp/feignwebclient:1
+        name: feign-and-web-client
+        ports:
+        - containerPort: 8084
+        env:
+          - name: STUDENT_HOST
+            value: 10.96.96.12
+          - name: STUDENT_PORT
+            value: "8081"
+          - name: EMPLOYEE_HOST
+            value: 10.96.241.199
+          - name: EMPLOYEE_PORT
+            value: "8082"
+          - name: EUREKA_HOST
+            value: 10.96.184.127
+          - name: EUREKA_PORT
+            value: "8761"
+        resources: {}
+status: {}
