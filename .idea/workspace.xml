@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="316d5220-c3d7-4948-88ec-e617578b11de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/feignclient/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feignclient/deployment.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/employee/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feignclient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feignclient/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feignclient/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/feignclient/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +108,7 @@
       <updated>1706100011474</updated>
       <workItem from="1706100012550" duration="97000" />
       <workItem from="1706101461233" duration="3360000" />
-      <workItem from="1706146222235" duration="1744000" />
+      <workItem from="1706146222235" duration="2844000" />
     </task>
     <servers />
   </component>

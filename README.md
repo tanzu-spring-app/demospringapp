@@ -53,7 +53,7 @@ Demo Project For Spring Application Discovery in Tanzu
 	change - ip in deployment.yaml  
 	kubectl apply -f deployment.yaml  
 	kubectl expose deployment demospringapp --type=LoadBalancer --port=8080 --target-port=8080  
-  
+	  <br />
 	- docker build -t demospringapp/feignwebclient:1 .  
 	kind load docker-image demospringapp/feignwebclient:1  
     change - ip in deployment.yaml  
