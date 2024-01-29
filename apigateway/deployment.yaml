@@ -26,21 +26,28 @@ spec:
         - containerPort: 8080
         env:
           - name: STUDENT_HOST
-            value: 10.96.96.12
+            value: student-app-service
           - name: STUDENT_PORT
             value: "8081"
           - name: EMPLOYEE_HOST
-            value: 10.96.241.199
+            value: employee-app-service
           - name: EMPLOYEE_PORT
             value: "8082"
           - name: MESSAGE_HOST
-            value: 10.96.189.45
+            value: messaging-queue-service
           - name: MESSAGE_PORT
             value: "8083"
           - name: FEIGN_HOST
-            value: 10.96.72.84
+            value: connector-app-service
           - name: FEIGN_PORT
             value: "8084"
-
+          - name: EUREKA_HOST
+            value: service-registry-service
+          - name: EUREKA_PORT
+            value: "8761"
+          - name: ZIPKIN_HOST
+            value: zipkin-tracing-service
+          - name: ZIPKIN_PORT
+            value: "9411"
         resources: {}
 status: {}

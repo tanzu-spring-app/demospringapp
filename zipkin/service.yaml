@@ -2,21 +2,24 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: connector-app
-  name: connector-app-service
+    app: zipkin-tracing
+  name: zipkin-tracing-service
   namespace: default
 spec:
+  allocateLoadBalancerNodePorts: true
+  externalTrafficPolicy: Cluster
   internalTrafficPolicy: Cluster
   ipFamilies:
   - IPv4
   ipFamilyPolicy: SingleStack
   ports:
-  - port: 8084
+  - nodePort: 32326
+    port: 9411
     protocol: TCP
-    targetPort: 8084
+    targetPort: 9411
   selector:
-    app: connector-app
+    app: zipkin-tracing
   sessionAffinity: None
-  type: ClusterIP
+  type: LoadBalancer
 status:
   loadBalancer: {}

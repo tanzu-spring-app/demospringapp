@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: student-app
-  name: student-app
+  name: student-app-service
 spec:
   replicas: 1
   selector:
@@ -26,7 +26,7 @@ spec:
         - containerPort: 8081
         env:
           - name: DB_HOST
-            value: 10.96.253.49
+            value: student-db-service
           - name: DB_PORT
             value: "3306"
           - name: DB_USERNAME
@@ -34,8 +34,12 @@ spec:
           - name: DB_PASSWORD
             value: root
           - name: EUREKA_HOST
-            value: 10.96.184.127
+            value: service-registry-service
           - name: EUREKA_PORT
             value: "8761"
+          - name: ZIPKIN_HOST
+            value: zipkin-tracing-service
+          - name: ZIPKIN_PORT
+            value: "9411"
         resources: {}
 status: {}

@@ -2,54 +2,19 @@ apiVersion: v1
 kind: Service
 metadata:
   name: rabbitmq-service
-spec:
-  selector:
-    app: rabbitmq
-  ports:
-    - name: rabbitmq
-      protocol: TCP
-      port: 5672      # RabbitMQ default port
-      targetPort: 5672
-    - name: rabbitmq-management
-      protocol: TCP
-      port: 15672     # RabbitMQ Management UI
-      targetPort: 15672
-  type: LoadBalancer  # Use LoadBalancer or NodePort based on your environment
-apiVersion: v1
-kind: Service
-metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"name":"rabbitmq-service","namespace":"default"},"spec":{"ports":[{"name":"rabbitmq","port":5672,"protocol":"TCP","targetPort":5672},{"name":"rabbitmq-management","port":15672,"protocol":"TCP","targetPort":15672}],"selector":{"app":"rabbitmq"},"type":"LoadBalancer"}}
-  creationTimestamp: "2024-01-17T17:05:22Z"
-  name: rabbitmq-service
   namespace: default
-  resourceVersion: "8219"
-  uid: 9304100b-fb9b-4fa3-8ddb-3db77b1b304b
 spec:
-  allocateLoadBalancerNodePorts: true
-  clusterIP: 10.96.51.88
-  clusterIPs:
-  - 10.96.51.88
-  externalTrafficPolicy: Cluster
   internalTrafficPolicy: Cluster
   ipFamilies:
   - IPv4
   ipFamilyPolicy: SingleStack
   ports:
-  - name: rabbitmq
-    nodePort: 30314
-    port: 5672
+  - port: 5672
     protocol: TCP
     targetPort: 5672
-  - name: rabbitmq-management
-    nodePort: 32169
-    port: 15672
-    protocol: TCP
-    targetPort: 15672
   selector:
     app: rabbitmq
   sessionAffinity: None
-  type: LoadBalancer
+  type: ClusterIP
 status:
   loadBalancer: {}
