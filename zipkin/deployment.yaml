@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: zipkin-tracing
+  name: zipkin-tracing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zipkin-tracing
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: zipkin-tracing
+    spec:
+      dnsPolicy: ClusterFirst
+      nodeSelector:
+        kubernetes.io/os: linux
+      restartPolicy: Always
+      containers:
+      - image: openzipkin/zipkin:latest
+        name: zipkin-tracing
+        ports:
+        - containerPort: 9411
+        resources: {}
+status: {}

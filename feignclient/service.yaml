@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2024-01-25T02:00:15Z"
+  labels:
+    app: feign-and-web-client
+  name: feign-and-web-client
+  namespace: default
+  resourceVersion: "124676"
+  uid: 8e25cc76-29f4-476c-936c-800420236719
+spec:
+  clusterIP: 10.96.72.84
+  clusterIPs:
+  - 10.96.72.84
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - port: 8084
+    protocol: TCP
+    targetPort: 8084
+  selector:
+    app: feign-and-web-client
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}

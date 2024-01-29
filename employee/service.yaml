@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2024-01-21T18:14:26Z"
+  labels:
+    app: employee-app
+  name: employee-app
+  namespace: default
+  resourceVersion: "69836"
+  uid: 8539f431-0acb-4434-a930-8956afac2909
+spec:
+  clusterIP: 10.96.241.199
+  clusterIPs:
+  - 10.96.241.199
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - port: 8082
+    protocol: TCP
+    targetPort: 8082
+  selector:
+    app: employee-app
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}

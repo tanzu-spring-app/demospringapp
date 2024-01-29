@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2024-01-23T10:29:05Z"
+  labels:
+    app: service-registry
+  name: service-registry
+  namespace: default
+  resourceVersion: "109994"
+  uid: aa6ffde1-3e72-4557-945c-360fdccdd154
+spec:
+  allocateLoadBalancerNodePorts: true
+  clusterIP: 10.96.184.127
+  clusterIPs:
+  - 10.96.184.127
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - nodePort: 31216
+    port: 8761
+    protocol: TCP
+    targetPort: 8761
+  selector:
+    app: service-registry
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer: {}
