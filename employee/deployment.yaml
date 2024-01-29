@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: employee-app
+    appGroup: MySpringApp
   name: employee-app
 spec:
   replicas: 1

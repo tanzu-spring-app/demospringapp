@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: demospringapp
+    appGroup: MySpringApp
   name: demospringapp
 spec:
   replicas: 1

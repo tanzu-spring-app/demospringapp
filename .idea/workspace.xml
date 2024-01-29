@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="316d5220-c3d7-4948-88ec-e617578b11de" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceRegistry/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceRegistry/service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/employee/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/employee/service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feignclient/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/feignclient/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feignclient/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/feignclient/service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messaging/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/messaging/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messaging/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/messaging/service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/employee/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/employee/service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/student/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/student/service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq/service.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/student/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/student/service.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="316d5220-c3d7-4948-88ec-e617578b11de" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

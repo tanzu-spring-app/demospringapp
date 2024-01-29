@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: messaging-app
+    appGroup: MySpringApp
   name: messaging-app
 spec:
   replicas: 1

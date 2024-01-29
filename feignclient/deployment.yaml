@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: connector-app
+    appGroup: MySpringApp
   name: connector-app
 spec:
   replicas: 1

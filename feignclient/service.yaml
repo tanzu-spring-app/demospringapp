@@ -3,6 +3,7 @@ kind: Service
 metadata:
   labels:
     app: connector-app
+    appGroup: MySpringApp
   name: connector-app-service
   namespace: default
 spec:

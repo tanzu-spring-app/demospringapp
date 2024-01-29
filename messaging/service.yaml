@@ -3,6 +3,7 @@ kind: Service
 metadata:
   labels:
     app: messaging-app
+    appGroup: MySpringApp
   name: messaging-queue-service
   namespace: default
 spec:
