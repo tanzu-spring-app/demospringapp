@@ -2,18 +2,19 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: feign-and-web-client
-  name: feign-and-web-client
+    app: connector-app
+    appGroup: MySpringApp
+  name: connector-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: feign-and-web-client
+      app: connector-app
   strategy: {}
   template:
     metadata:
       labels:
-        app: feign-and-web-client
+        app: connector-app
     spec:
       dnsPolicy: ClusterFirst
       nodeSelector:
@@ -21,21 +22,25 @@ spec:
       restartPolicy: Always
       containers:
       - image: demospringapp/feignwebclient:1
-        name: feign-and-web-client
+        name: connector-app
         ports:
         - containerPort: 8084
         env:
           - name: STUDENT_HOST
-            value: 10.96.96.12
+            value: student-app-service
           - name: STUDENT_PORT
             value: "8081"
           - name: EMPLOYEE_HOST
-            value: 10.96.241.199
+            value: employee-app-service
           - name: EMPLOYEE_PORT
             value: "8082"
           - name: EUREKA_HOST
-            value: 10.96.184.127
+            value: service-registry-service
           - name: EUREKA_PORT
             value: "8761"
+          - name: ZIPKIN_HOST
+            value: zipkin-tracing-service
+          - name: ZIPKIN_PORT
+            value: "9411"
         resources: {}
 status: {}

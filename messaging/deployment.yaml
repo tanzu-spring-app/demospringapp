@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: messaging-app
+    appGroup: MySpringApp
   name: messaging-app
 spec:
   replicas: 1
@@ -26,8 +27,16 @@ spec:
         - containerPort: 8083
         env:
           - name: RABBITMQ_HOST
-            value: 10.96.51.88
+            value: rabbitmq-service
           - name: RABBITMQ_PORT
             value: "5672"
+          - name: EUREKA_HOST
+            value: service-registry-service
+          - name: EUREKA_PORT
+            value: "8761"
+          - name: ZIPKIN_HOST
+            value: zipkin-tracing-service
+          - name: ZIPKIN_PORT
+            value: "9411"
         resources: {}
 status: {}

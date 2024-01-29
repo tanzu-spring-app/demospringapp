@@ -2,22 +2,24 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: student-app
-    appGroup: MySpringApp
-  name: student-app-service
+    app: zipkin-tracing
+  name: zipkin-tracing-service
   namespace: default
 spec:
+  allocateLoadBalancerNodePorts: true
+  externalTrafficPolicy: Cluster
   internalTrafficPolicy: Cluster
   ipFamilies:
   - IPv4
   ipFamilyPolicy: SingleStack
   ports:
-  - port: 8081
+  - nodePort: 32326
+    port: 9411
     protocol: TCP
-    targetPort: 8081
+    targetPort: 9411
   selector:
-    app: student-app
+    app: zipkin-tracing
   sessionAffinity: None
-  type: ClusterIP
+  type: LoadBalancer
 status:
   loadBalancer: {}
