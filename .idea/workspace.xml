@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2ba08498-04b4-4abe-a567-cce47a6b6c4e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceRegistry/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceRegistry/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete_setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/complete_setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/employee/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feignclient/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/feignclient/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/messaging/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/employee/pv.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/employee/pv.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/student/pv.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/student/pv.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq/pv.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq/pv.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/student/deployment.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;contexts&quot;: [
+    {
+      &quot;name&quot;: &quot;somilb@aniket-eks-cluster.us-west-2.eksctl.io&quot;
+    }
+  ],
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="KubernetesSettings">
+    <option name="contextName" value="somilb@aniket-eks-cluster.us-west-2.eksctl.io" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2bde6FiHK5CGi4ecp2YXhLUwbVr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ankit-eks&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
+      <option name="appName" />
+      <option name="appServicePlanName" />
+      <option name="appServicePlanResourceGroup" />
+      <option name="appSettingsKey" value="2030a30b-eadd-4645-ae77-870363a8cd89" />
+      <option name="artifact" />
+      <option name="debugOptions" />
+      <option name="deployment" />
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="funcPath" />
+      <option name="functionHostArguments" />
+      <option name="hostJsonPath" />
+      <option name="insightsName" />
+      <option name="instrumentationKey" />
+      <option name="javaVersion" />
+      <option name="localSettingsJsonPath" />
+      <option name="moduleName" />
+      <option name="os" />
+      <option name="pricingTier" />
+      <option name="providerMap">
+        <map />
+      </option>
+      <option name="region" />
+      <option name="resourceGroup" />
+      <option name="stagingFolder" />
+      <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ba08498-04b4-4abe-a567-cce47a6b6c4e" name="Changes" comment="" />
+      <created>1706549206404</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706549206404</updated>
+      <workItem from="1706549213592" duration="853000" />
+      <workItem from="1706550389773" duration="406000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

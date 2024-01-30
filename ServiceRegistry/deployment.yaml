@@ -17,10 +17,10 @@ spec:
     spec:
       dnsPolicy: ClusterFirst
       nodeSelector:
-        kubernetes.io/os: linux
+        instance-type: t3.micro
       restartPolicy: Always
       containers:
-      - image: demospringapp/serviceregistry:1
+      - image: 111370797202.dkr.ecr.us-west-2.amazonaws.com/demospringapp/serviceregistry:1
         name: service-registry
         ports:
         - containerPort: 8761

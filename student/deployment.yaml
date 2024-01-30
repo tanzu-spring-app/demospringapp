@@ -4,7 +4,7 @@ metadata:
   labels:
     app: student-app
     appGroup: MySpringApp
-  name: student-app-service
+  name: student-app
 spec:
   replicas: 1
   selector:
@@ -21,7 +21,7 @@ spec:
         kubernetes.io/os: linux
       restartPolicy: Always
       containers:
-      - image: demospringapp/student:1
+      - image: 111370797202.dkr.ecr.us-west-2.amazonaws.com/demospringapp/student:1
         name: student-app
         ports:
         - containerPort: 8081

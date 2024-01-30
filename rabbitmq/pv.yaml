@@ -7,6 +7,14 @@ spec:
     storage: 1Gi
   accessModes:
     - ReadWriteOnce
-  hostPath:
-    path: /data/rabbitmq  # Replace with your host path
-
+  storageClassName: local-storage
+  local:
+    path: /mnt
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: kubernetes.io/hostname
+              operator: In
+              values:
+                - ip-192-168-55-29.us-west-2.compute.internal

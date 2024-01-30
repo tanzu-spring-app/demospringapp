@@ -18,10 +18,10 @@ spec:
     spec:
       dnsPolicy: ClusterFirst
       nodeSelector:
-        kubernetes.io/os: linux
+        instance-type: t3.small
       restartPolicy: Always
       containers:
-      - image: demospringapp/employee:1
+      - image: 111370797202.dkr.ecr.us-west-2.amazonaws.com/demospringapp/employee:1
         name: employee-app
         ports:
         - containerPort: 8082
