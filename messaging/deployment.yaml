@@ -18,10 +18,10 @@ spec:
     spec:
       dnsPolicy: ClusterFirst
       nodeSelector:
-        instance-type: t3.micro
+        instance-type: t3.small
       restartPolicy: Always
       containers:
-      - image: 111370797202.dkr.ecr.us-west-2.amazonaws.com/demospringapp/messaging:1
+      - image: 111370797202.dkr.ecr.us-west-2.amazonaws.com/demospringapp/messaging:2
         name: messaging-app
         ports:
         - containerPort: 8083
