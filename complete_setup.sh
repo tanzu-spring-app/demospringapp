@@ -1,39 +1,34 @@
 #!/bin/bash
 
-echo "Running kubectl commands..."
+echo "Deploy apps..."
 
-kubectl apply -f zipkin/deployment.yaml
-kubectl apply -f zipkin/service.yaml
+cd ServiceRegistry
+mvn clean install
+cd ..
 
-kubectl apply -f rabbitmq/pv.yaml
-kubectl apply -f rabbitmq/pvc.yaml
-kubectl apply -f rabbitmq/deployment.yaml
-kubectl apply -f rabbitmq/service.yaml
+cd student
+mvn clean install
+cd ..
 
-kubectl apply -f mysql/student/pv.yaml
-kubectl apply -f mysql/student/pvc.yaml
-kubectl apply -f mysql/student/deployment.yaml
-kubectl apply -f mysql/student/service.yaml
+cd employee
+mvn clean install
+cd ..
 
-kubectl apply -f mysql/employee/pv.yaml
-kubectl apply -f mysql/employee/pvc.yaml
-kubectl apply -f mysql/employee/deployment.yaml
-kubectl apply -f mysql/employee/service.yaml
+cd messaging
+mvn clean install
+cd ..
 
-kubectl apply -f ServiceRegistry/deployment.yaml
-kubectl apply -f ServiceRegistry/service.yaml
+cd feignclient
+mvn clean install
+cd ..
 
-kubectl apply -f student/deployment.yaml
-kubectl apply -f student/service.yaml
+cd apigateway
+mvn clean install
+cd ..
 
-kubectl apply -f employee/deployment.yaml
-kubectl apply -f employee/service.yaml
-
-kubectl apply -f messaging/deployment.yaml
-kubectl apply -f messaging/service.yaml
-
-kubectl apply -f feignclient/deployment.yaml
-kubectl apply -f feignclient/service.yaml
-
-kubectl apply -f apigateway/deployment.yaml
-kubectl apply -f apigateway/service.yaml
+java -jar ServiceRegistry/target/ServiceRegistry-0.0.1-SNAPSHOT.jar &
+java -jar student/target/student-0.0.1-SNAPSHOT.jar &
+java -jar employee/target/employee-0.0.1-SNAPSHOT.jar &
+java -jar messaging/target/messaging-0.0.1-SNAPSHOT.jar &
+java -jar feignclient/target/feignclient-0.0.1-SNAPSHOT.jar &
+java -jar apigateway/target/apigateway-0.0.1-SNAPSHOT.jar &

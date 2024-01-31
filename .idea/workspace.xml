@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ba08498-04b4-4abe-a567-cce47a6b6c4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceRegistry/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceRegistry/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/complete_setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/complete_setup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/employee/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feignclient/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/feignclient/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messaging/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/messaging/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/employee/pv.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/employee/pv.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/student/pv.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/student/pv.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq/pv.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq/pv.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/student/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/employee/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/student/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +44,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;ankit-eks&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ankit-vm&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -93,6 +86,14 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-5f3ff201" />
+        <option value="jdk-17.0.9-jbrsdk-17.0.9-3183f394aec4-5ecb3f0b" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -103,6 +104,8 @@
       <updated>1706549206404</updated>
       <workItem from="1706549213592" duration="853000" />
       <workItem from="1706550389773" duration="406000" />
+      <workItem from="1706611467972" duration="1140000" />
+      <workItem from="1706680696479" duration="2121000" />
     </task>
     <servers />
   </component>
