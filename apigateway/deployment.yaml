@@ -21,7 +21,7 @@ spec:
         instance-type: t3.small
       restartPolicy: Always
       containers:
-      - image: 111370797202.dkr.ecr.us-west-2.amazonaws.com/demospringapp/apigateway:1
+      - image: 111370797202.dkr.ecr.us-west-2.amazonaws.com/demospringapp/apigateway:2
         name: demospringapp
         ports:
         - containerPort: 8080
@@ -50,5 +50,13 @@ spec:
             value: zipkin-tracing-service
           - name: ZIPKIN_PORT
             value: "9411"
+          - name: MY_POD_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name
+          - name: MY_POD_NAMESPACE
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.namespace
         resources: {}
 status: {}

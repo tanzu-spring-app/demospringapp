@@ -6,7 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="2ba08498-04b4-4abe-a567-cce47a6b6c4e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messaging/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/messaging/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceRegistry/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceRegistry/service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway/src/main/java/com/demospring/apigateway/api/service/GatewayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/src/main/java/com/demospring/apigateway/api/service/GatewayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete_setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/complete_setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/messaging/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging/src/main/java/com/rabbitmq/messaging/rabbitmq/RabbitMQController.java" beforeDir="false" afterPath="$PROJECT_DIR$/messaging/src/main/java/com/rabbitmq/messaging/rabbitmq/RabbitMQController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/src/main/java/com/studentdb/student/school/student/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/student/src/main/java/com/studentdb/student/school/student/StudentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,10 +113,29 @@
       <workItem from="1706611467972" duration="1140000" />
       <workItem from="1706680696479" duration="3378000" />
       <workItem from="1706694501710" duration="50000" />
+      <workItem from="1706768777060" duration="493000" />
+      <workItem from="1706864974822" duration="2399000" />
+      <workItem from="1707114368663" duration="4642000" />
+      <workItem from="1707212847265" duration="1647000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/apigateway/src/main/java/com/demospring/apigateway/api/service/GatewayService.java</url>
+          <line>34</line>
+          <properties class="com.demospring.apigateway.api.service.GatewayService" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

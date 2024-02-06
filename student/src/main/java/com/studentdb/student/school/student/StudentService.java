@@ -13,6 +13,10 @@ public class StudentService {
     @Autowired
     private StudentRepository studentRepository;
 
+    public StudentService(final StudentRepository studentRepository) {
+        this.studentRepository = studentRepository;
+    }
+
 
     public Student getStudentById(int id) {
         Optional<Student> student = studentRepository.findById(id);

@@ -12,6 +12,12 @@ import java.util.List;
 @Service
 public class GatewayService {
 
+    @Value("${apigateway.pod.name}")
+    private String myPodName;
+
+    @Value("${apigateway.namespace.name}")
+    private String myNameSpace;
+
     @Value("${demospring.student.url}")
     private String studentUrl;
 
@@ -31,6 +37,9 @@ public class GatewayService {
     }
 
     public Employee getEmployee() {
+        System.out.println("POD Name : " + myPodName);
+        System.out.println("Namespace Name : " + myNameSpace);
+
         String url = employeeUrl + "/employees";
         List<Employee> result = restTemplate.getForObject(url, List.class);
         if (result == null || result.isEmpty()) {
