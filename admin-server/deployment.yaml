@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: admin-server
+    appGroup: MySpringApp
+  name: admin-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: admin-server
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: admin-server
+    spec:
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      containers:
+      - image: 111370797202.dkr.ecr.us-west-2.amazonaws.com/demospringapp/adminserver:2
+        name: adminserver
+        ports:
+        - containerPort: 8089
+        env:
+          - name: EUREKA_HOST
+            value: service-registry-service
+          - name: EUREKA_PORT
+            value: "8761"
+        resources: {}
+status: {}

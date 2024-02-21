@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: admin-server
+    appGroup: MySpringApp
+  name: admin-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: admin-client
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: admin-client
+    spec:
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      containers:
+      - image: 111370797202.dkr.ecr.us-west-2.amazonaws.com/demospringapp/adminclient:1
+        name: adminclient
+        ports:
+        - containerPort: 8090
+        env:
+          - name: ADMIN_SERVER_HOST
+            value: admin-server-service
+          - name: ADMIN_SERVER_PORT
+            value: "8089"
+          - name: DB_HOST
+            value: student-db-service
+          - name: DB_PORT
+            value: "3306"
+        resources: {}
+status: {}
