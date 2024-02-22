@@ -30,6 +30,10 @@ spec:
               value: admin-server-service
             - name: ADMIN_SERVER_PORT
               value: "8089"
+            - name: ADMIN_CLIENT_HOST
+              value: admin-client-service
+            - name: ADMIN_CLIENT_PORT
+              value: "8091"
             - name: DB_HOST
               value: student-db-service
             - name: DB_PORT
