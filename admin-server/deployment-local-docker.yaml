@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: admin-server-app
+    appGroup: MySpringApp
+  name: admin-server-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: admin-server-app
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: admin-server-app
+    spec:
+      dnsPolicy: ClusterFirst
+      nodeSelector:
+        kubernetes.io/os: linux
+      restartPolicy: Always
+      containers:
+        - image: demospringapp/adminserver:3
+          name: admin-server-app
+          ports:
+            - containerPort: 8089
+          resources: {}
+status: {}

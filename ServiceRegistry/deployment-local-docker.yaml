@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: service-registry
+  name: service-registry
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: service-registry
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: service-registry
+    spec:
+      dnsPolicy: ClusterFirst
+      nodeSelector:
+        kubernetes.io/os: linux
+      restartPolicy: Always
+      containers:
+        - image: demospringapp/serviceregistry:1
+          name: service-registry
+          ports:
+            - containerPort: 8761
+          resources: {}
+status: {}

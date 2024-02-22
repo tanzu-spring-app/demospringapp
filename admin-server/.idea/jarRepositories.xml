@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="libs-release" />
+      <option name="url" value="http://10.45.0.49/libs-release" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="atlas-release-maven" />
+      <option name="name" value="nsx-pace-deps" />
+      <option name="url" value="http://10.45.0.49/libs-release/atlas-release-maven" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="osvc-release-local" />
+      <option name="name" value="osvc-release-local" />
+      <option name="url" value="http://10.45.0.49/libs-release/osvc-release-local" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="symphony-maven-local" />
+      <option name="name" value="symphony-maven-local" />
+      <option name="url" value="http://10.45.0.49/libs-release/symphony-maven-local/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="nsx-pace-deps" />
+      <option name="name" value="nsx-pace-deps" />
+      <option name="url" value="http://10.45.0.49/libs-release/nsx-pace-deps" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="snapshots" />
+      <option name="name" value="libs-snapshot" />
+      <option name="url" value="http://10.45.0.49/libs-snapshot" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Atlas-snapshot-internal-repo-artifactory" />
+      <option name="name" value="Atlas snapshot internal Repo-artifactory" />
+      <option name="url" value="https://build-artifactory.eng.vmware.com/artifactory/atlas-snapshot-maven" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="vmware-repo" />
+      <option name="name" value="VMware Nexus Repo-Mirror" />
+      <option name="url" value="https://build-squid.eng.vmware.com/nexus/content/groups/repo" />
+    </remote-repository>
+  </component>
+</project>

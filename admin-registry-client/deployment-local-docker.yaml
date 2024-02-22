@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: admin-client
+    appGroup: MySpringApp
+  name: admin-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: admin-client
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: admin-client
+    spec:
+      dnsPolicy: ClusterFirst
+      nodeSelector:
+        kubernetes.io/os: linux
+      restartPolicy: Always
+      containers:
+        - image: demospringapp/adminclient:1
+          name: adminclient
+          ports:
+            - containerPort: 8090
+          env:
+            - name: ADMIN_SERVER_HOST
+              value: admin-server-service
+            - name: ADMIN_SERVER_PORT
+              value: "8089"
+            - name: DB_HOST
+              value: student-db-service
+            - name: DB_PORT
+              value: "3306"
+          resources: {}
+status: {}

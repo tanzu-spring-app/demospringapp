@@ -1,0 +1,6 @@
+com/example/springboot/admin/client2/entities/Rating.class
+com/example/springboot/admin/client2/StudentRepository.class
+com/example/springboot/admin/client2/controller/RatingController.class
+com/example/springboot/admin/client2/StudentService.class
+com/example/springboot/admin/client2/entities/Student.class
+com/example/springboot/admin/client2/AdminClient2Application.class
