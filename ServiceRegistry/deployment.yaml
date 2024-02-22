@@ -16,8 +16,6 @@ spec:
         app: service-registry
     spec:
       dnsPolicy: ClusterFirst
-      nodeSelector:
-        instance-type: t3.micro
       restartPolicy: Always
       containers:
       - image: 111370797202.dkr.ecr.us-west-2.amazonaws.com/demospringapp/serviceregistry:1

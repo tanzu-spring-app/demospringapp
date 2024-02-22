@@ -17,8 +17,6 @@ spec:
         app: demospringapp
     spec:
       dnsPolicy: ClusterFirst
-      nodeSelector:
-        instance-type: t3.small
       restartPolicy: Always
       containers:
       - image: 111370797202.dkr.ecr.us-west-2.amazonaws.com/demospringapp/apigateway:1
@@ -35,7 +33,7 @@ spec:
           - name: EMPLOYEE_PORT
             value: "8082"
           - name: MESSAGE_HOST
-            value: messaging-queue-service
+            value: messaging-app-service
           - name: MESSAGE_PORT
             value: "8083"
           - name: FEIGN_HOST

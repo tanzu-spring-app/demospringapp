@@ -2,19 +2,19 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: admin-server
+    app: adminserver
     appGroup: MySpringApp
-  name: admin-server
+  name: adminserver
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: admin-server
+      app: adminserver
   strategy: {}
   template:
     metadata:
       labels:
-        app: admin-server
+        app: adminserver
     spec:
       dnsPolicy: ClusterFirst
       restartPolicy: Always
@@ -23,10 +23,5 @@ spec:
         name: adminserver
         ports:
         - containerPort: 8089
-        env:
-          - name: EUREKA_HOST
-            value: service-registry-service
-          - name: EUREKA_PORT
-            value: "8761"
         resources: {}
 status: {}

@@ -7,17 +7,10 @@ metadata:
   name: student-app-service
   namespace: default
 spec:
-  internalTrafficPolicy: Cluster
-  ipFamilies:
-  - IPv4
-  ipFamilyPolicy: SingleStack
   ports:
   - port: 8081
     protocol: TCP
     targetPort: 8081
   selector:
     app: student-app
-  sessionAffinity: None
   type: ClusterIP
-status:
-  loadBalancer: {}

@@ -4,20 +4,14 @@ metadata:
   labels:
     app: messaging-app
     appGroup: MySpringApp
-  name: messaging-queue-service
+  name: messaging-app-service
   namespace: default
 spec:
   internalTrafficPolicy: Cluster
-  ipFamilies:
-  - IPv4
-  ipFamilyPolicy: SingleStack
   ports:
   - port: 8083
     protocol: TCP
     targetPort: 8083
   selector:
     app: messaging-app
-  sessionAffinity: None
   type: ClusterIP
-status:
-  loadBalancer: {}

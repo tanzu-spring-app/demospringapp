@@ -6,7 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="2ba08498-04b4-4abe-a567-cce47a6b6c4e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceRegistry/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceRegistry/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceRegistry/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceRegistry/service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceRegistry/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceRegistry/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/admin-server/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-server/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-server/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-server/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-server/service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/employee/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/messaging/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/messaging/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/messaging/service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/student/service.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +55,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;ankit-eks&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/agirhe/SpringWorkspace/DemoRepository/demospringapp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -84,6 +96,14 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-5f3ff201" />
+        <option value="jdk-17.0.9-jbrsdk-17.0.9-3183f394aec4-5ecb3f0b" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -94,6 +114,12 @@
       <updated>1706549206404</updated>
       <workItem from="1706549213592" duration="853000" />
       <workItem from="1706550389773" duration="406000" />
+      <workItem from="1707285352878" duration="2677000" />
+      <workItem from="1707372035955" duration="2733000" />
+      <workItem from="1707715657669" duration="870000" />
+      <workItem from="1707805206651" duration="4950000" />
+      <workItem from="1708527069994" duration="561000" />
+      <workItem from="1708580608680" duration="1153000" />
     </task>
     <servers />
   </component>

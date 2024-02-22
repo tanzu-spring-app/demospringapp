@@ -7,20 +7,10 @@ metadata:
   name: apigateway-service
   namespace: default
 spec:
-  allocateLoadBalancerNodePorts: true
-  externalTrafficPolicy: Cluster
-  internalTrafficPolicy: Cluster
-  ipFamilies:
-  - IPv4
-  ipFamilyPolicy: SingleStack
   ports:
-  - nodePort: 30970
-    port: 8080
+  - port: 80
     protocol: TCP
     targetPort: 8080
   selector:
     app: demospringapp
-  sessionAffinity: None
   type: LoadBalancer
-status:
-  loadBalancer: {}

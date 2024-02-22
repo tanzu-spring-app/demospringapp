@@ -6,12 +6,6 @@ metadata:
   name: service-registry-service
   namespace: default
 spec:
-  allocateLoadBalancerNodePorts: true
-  externalTrafficPolicy: Cluster
-  internalTrafficPolicy: Cluster
-  ipFamilies:
-  - IPv4
-  ipFamilyPolicy: SingleStack
   ports:
   - nodePort: 31216
     port: 8761
@@ -19,7 +13,6 @@ spec:
     targetPort: 8761
   selector:
     app: service-registry
-  sessionAffinity: None
   type: LoadBalancer
 status:
   loadBalancer: {}
