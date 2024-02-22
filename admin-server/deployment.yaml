@@ -19,7 +19,7 @@ spec:
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       containers:
-      - image: 111370797202.dkr.ecr.us-west-2.amazonaws.com/demospringapp/adminserver:2
+      - image: 111370797202.dkr.ecr.us-west-2.amazonaws.com/demospringapp/adminserver:3
         name: adminserver
         ports:
         - containerPort: 8089
