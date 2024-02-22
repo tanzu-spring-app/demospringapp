@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: adminregistryclient
+    appGroup: MySpringApp
+  name: admin-registry-client-service
+  namespace: default
+spec:
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+    - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+    - port: 8092
+      protocol: TCP
+      targetPort: 8092
+  selector:
+    app: adminregistryclient
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
