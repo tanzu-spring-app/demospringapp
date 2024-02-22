@@ -2,19 +2,19 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: admin-client
+    app: adminclient
     appGroup: MySpringApp
-  name: admin-client
+  name: adminclient
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: admin-client
+      app: adminclient
   strategy: {}
   template:
     metadata:
       labels:
-        app: admin-client
+        app: adminclient
     spec:
       dnsPolicy: ClusterFirst
       nodeSelector:
@@ -24,7 +24,7 @@ spec:
         - image: demospringapp/adminclient:1
           name: adminclient
           ports:
-            - containerPort: 8090
+            - containerPort: 8091
           env:
             - name: ADMIN_SERVER_HOST
               value: admin-server-service
