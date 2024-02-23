@@ -2,27 +2,27 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: adminclient
+    app: adminregistryclient
     appGroup: MySpringApp
-  name: adminclient
+  name: adminregistryclient
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: adminclient
+      app: adminregistryclient
   strategy: {}
   template:
     metadata:
       labels:
-        app: adminclient
+        app: adminregistryclient
     spec:
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       containers:
-      - image: 111370797202.dkr.ecr.us-west-2.amazonaws.com/demospringapp/adminclient:3
-        name: adminclient
+      - image: 111370797202.dkr.ecr.us-west-2.amazonaws.com/demospringapp/adminregistryclient:2
+        name: adminregistryclient
         ports:
-        - containerPort: 8091
+        - containerPort: 8092
         env:
           - name: ADMIN_SERVER_HOST
             value: admin-server-service
@@ -32,9 +32,13 @@ spec:
             value: student-db-service
           - name: DB_PORT
             value: "3306"
+          - name: EUREKA_HOST
+            value: service-registry-service
+          - name: EUREKA_PORT
+            value: "8761"
           - name: ADMIN_CLIENT_HOST
-            value: admin-client-service
+            value: admin-registry-client-service
           - name: ADMIN_CLIENT_PORT
-            value: "8091"
+            value: "8092"
         resources: {}
 status: {}
