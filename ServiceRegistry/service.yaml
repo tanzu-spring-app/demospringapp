@@ -3,8 +3,9 @@ kind: Service
 metadata:
   labels:
     app: service-registry
+    purpose: precious
   name: service-registry-service
-  namespace: default
+  namespace: voyager-ns
 spec:
   ports:
   - nodePort: 31216
@@ -13,6 +14,6 @@ spec:
     targetPort: 8761
   selector:
     app: service-registry
-  type: LoadBalancer
+  type: NodePort
 status:
   loadBalancer: {}

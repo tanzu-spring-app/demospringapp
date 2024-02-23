@@ -5,19 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ba08498-04b4-4abe-a567-cce47a6b6c4e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceRegistry/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceRegistry/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServiceRegistry/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceRegistry/deployment.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServiceRegistry/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceRegistry/service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceRegistry/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceRegistry/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/admin-server/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-server/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-server/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-server/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-server/service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/employee/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messaging/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/messaging/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messaging/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/messaging/service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/student/service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/employee/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feignclient/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/feignclient/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/messaging/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/student/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/student/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/student/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/student/service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/student/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zipkin/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/zipkin/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zipkin/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/zipkin/service.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +120,7 @@
       <workItem from="1707805206651" duration="4950000" />
       <workItem from="1708527069994" duration="561000" />
       <workItem from="1708580608680" duration="1153000" />
+      <workItem from="1708679896330" duration="2986000" />
     </task>
     <servers />
   </component>

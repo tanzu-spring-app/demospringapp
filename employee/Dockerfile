@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jdk-alpine
+FROM apache/beam_java17_sdk
 VOLUME /tmp
 COPY target/*.jar app.jar
 EXPOSE 8082

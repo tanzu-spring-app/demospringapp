@@ -4,8 +4,9 @@ metadata:
   labels:
     app: student-app
     appGroup: MySpringApp
+    purpose: precious
   name: student-app-service
-  namespace: default
+  namespace: voyager-ns
 spec:
   ports:
   - port: 8081

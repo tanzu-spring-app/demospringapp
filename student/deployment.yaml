@@ -4,7 +4,9 @@ metadata:
   labels:
     app: student-app
     appGroup: MySpringApp
+    purpose: precious
   name: student-app
+  namespace: voyager-ns
 spec:
   replicas: 1
   selector:
@@ -20,8 +22,10 @@ spec:
       nodeSelector:
         kubernetes.io/os: linux
       restartPolicy: Always
+      imagePullSecrets:
+        - name: registrysecret
       containers:
-      - image: 111370797202.dkr.ecr.us-west-2.amazonaws.com/demospringapp/student:1
+      - image: symphony-docker-local.jfrog.io/demospringapp/student:1
         name: student-app
         ports:
         - containerPort: 8081

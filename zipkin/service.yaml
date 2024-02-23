@@ -3,15 +3,10 @@ kind: Service
 metadata:
   labels:
     app: zipkin-tracing
+    purpose: precious
   name: zipkin-tracing-service
-  namespace: default
+  namespace: voyager-ns
 spec:
-  allocateLoadBalancerNodePorts: true
-  externalTrafficPolicy: Cluster
-  internalTrafficPolicy: Cluster
-  ipFamilies:
-  - IPv4
-  ipFamilyPolicy: SingleStack
   ports:
   - nodePort: 32326
     port: 9411
