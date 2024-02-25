@@ -4,8 +4,9 @@ metadata:
   labels:
     app: adminserver
     appGroup: MySpringApp
+    purpose: precious
   name: admin-server-service
-  namespace: default
+  namespace: voyager-ns
 spec:
   ports:
   - port: 8089

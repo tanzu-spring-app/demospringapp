@@ -4,8 +4,9 @@ metadata:
   labels:
     app: demospringapp
     appGroup: MySpringApp
+    purpose: precious
   name: apigateway-service
-  namespace: default
+  namespace: voyager-ns
 spec:
   ports:
   - port: 80

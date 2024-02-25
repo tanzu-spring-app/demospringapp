@@ -4,7 +4,9 @@ metadata:
   labels:
     app: adminserver
     appGroup: MySpringApp
+    purpose: precious
   name: adminserver
+  namespace: voyager-ns
 spec:
   replicas: 1
   selector:
@@ -18,8 +20,10 @@ spec:
     spec:
       dnsPolicy: ClusterFirst
       restartPolicy: Always
+      imagePullSecrets:
+        - name: registrysecret
       containers:
-      - image: 111370797202.dkr.ecr.us-west-2.amazonaws.com/demospringapp/adminserver:3
+      - image: symphony-docker-local.jfrog.io/demospringapp/adminserver:3
         name: adminserver
         ports:
         - containerPort: 8089
