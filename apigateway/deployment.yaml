@@ -23,7 +23,7 @@ spec:
       imagePullSecrets:
         - name: registrysecret
       containers:
-      - image: symphony-docker-local.jfrog.io/demospringapp/apigateway:1
+      - image: symphony-docker-local.jfrog.io/demospringapp/demospringapp:1
         name: demospringapp
         ports:
         - containerPort: 8080

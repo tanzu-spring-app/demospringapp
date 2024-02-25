@@ -23,7 +23,7 @@ spec:
       imagePullSecrets:
         - name: registrysecret
       containers:
-      - image: symphony-docker-local.jfrog.io/demospringapp/adminregistryclient:2
+      - image: symphony-docker-local.jfrog.io/demospringapp/adminregistryclient:1
         name: adminregistryclient
         ports:
         - containerPort: 8092

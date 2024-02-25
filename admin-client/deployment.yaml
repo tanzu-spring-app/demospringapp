@@ -36,5 +36,9 @@ spec:
             value: student-db-service
           - name: DB_PORT
             value: "3306"
+          - name: ADMIN_CLIENT_HOST
+            value: admin-client-service
+          - name: ADMIN_CLIENT_PORT
+            value: "8090"
         resources: {}
 status: {}
