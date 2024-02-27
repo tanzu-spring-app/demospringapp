@@ -51,7 +51,8 @@ public class JMXClientScheduleApp {
             System.out.println("Invoking JMX method - " + result);*/
             //c.close();
             // Define the JMX service URL
-            JMXServiceURL url = new JMXServiceURL("service:jmx:rmi:///jndi/rmi://10.96.45.34:9090/jmxrmi");
+            JMXServiceURL url = new
+                    JMXServiceURL("service:jmx:rmi:///jndi/rmi://10.96.84.67:9090/jmxrmi");
 
             // Connect to the JMX server
             JMXConnector jmxc = JMXConnectorFactory.connect(url, null);

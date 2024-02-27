@@ -2,27 +2,27 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: jmxdemo-app
+    app: jmxserver-app
     appGroup: MySpringApp
-  name: jmxdemo-app
+  name: jmxserver-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: jmxdemo-app
+      app: jmxserver-app
   strategy: {}
   template:
     metadata:
       labels:
-        app: jmxdemo-app
+        app: jmxserver-app
     spec:
       dnsPolicy: ClusterFirst
       nodeSelector:
         kubernetes.io/os: linux
       restartPolicy: Always
       containers:
-      - image: jmxdemo-app:4
-        name: jmxdemo-app
+      - image: jmxserver-app:1
+        name: jmxserver-app
         ports:
         - containerPort: 9999
         - containerPort: 9090
