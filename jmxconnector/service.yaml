@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: jmxconnector-app
+    appGroup: MySpringApp
+  name: jmxconnector-app-service
+  namespace: default
+spec:
+  ports:
+  - port: 8099
+    protocol: TCP
+    targetPort: 8099
+  selector:
+    app: jmxconnector-app
+  type: ClusterIP

@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: jmxconnector-app
+    appGroup: MySpringApp
+  name: jmxconnector-app-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jmxconnector-app
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: jmxconnector-app
+    spec:
+      dnsPolicy: ClusterFirst
+      nodeSelector:
+        kubernetes.io/os: linux
+      restartPolicy: Always
+      containers:
+      - image: jmxconnector-app:4
+        name: jmxconnector-app
+        ports:
+        - containerPort: 8099
+        env:
+          - name: JMX_HOST_DOMAIN
+            value: "jmxdemo-app"
+          - name: JMX_PORT
+            value: "9090"
+        resources: {}
+status: {}

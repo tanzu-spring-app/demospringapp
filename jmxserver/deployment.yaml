@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: jmxdemo-app
+    appGroup: MySpringApp
+  name: jmxdemo-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jmxdemo-app
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: jmxdemo-app
+    spec:
+      dnsPolicy: ClusterFirst
+      nodeSelector:
+        kubernetes.io/os: linux
+      restartPolicy: Always
+      containers:
+      - image: jmxdemo-app:4
+        name: jmxdemo-app
+        ports:
+        - containerPort: 9999
+        - containerPort: 9090
+        env:
+          - name: DB_HOST
+            value: student-db-service
+          - name: DB_PORT
+            value: "3306"
+          - name: DB_USERNAME
+            value: root
+          - name: DB_PASSWORD
+            value: root
+        resources: {}
+status: {}
