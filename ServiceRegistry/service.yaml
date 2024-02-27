@@ -8,12 +8,9 @@ metadata:
   namespace: voyager-ns
 spec:
   ports:
-  - nodePort: 31216
-    port: 8761
-    protocol: TCP
-    targetPort: 8761
+    - port: 8761
+      protocol: TCP
+      targetPort: 8761
   selector:
     app: service-registry
-  type: NodePort
-status:
-  loadBalancer: {}
+  type: LoadBalancer
