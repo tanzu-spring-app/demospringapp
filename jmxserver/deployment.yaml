@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: jmxserver
+    appGroup: MySpringApp
+    purpose: precious
+  name: jmxserver
+  namespace: voyager-ns
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jmxserver
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: jmxserver
+    spec:
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: registrysecret
+      containers:
+        - image: symphony-docker-local.jfrog.io/demospringapp/jmxserver:2
+          name: jmxserver
+          ports:
+            - containerPort: 9090
+          env:
+            - name: DB_HOST
+              value: student-db-service
+            - name: DB_PORT
+              value: "3306"
+            - name: DB_USERNAME
+              value: root
+            - name: DB_PASSWORD
+              value: root
+          resources: {}
+status: {}

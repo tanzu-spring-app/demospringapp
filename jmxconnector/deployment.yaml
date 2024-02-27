@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: jmxconnector
+    appGroup: MySpringApp
+    purpose: precious
+  name: jmxconnector
+  namespace: voyager-ns
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jmxconnector
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: jmxconnector
+    spec:
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: registrysecret
+      containers:
+        - image: symphony-docker-local.jfrog.io/demospringapp/jmxconnector:2
+          name: jmxconnector
+          ports:
+            - containerPort: 8099
+          env:
+            - name: JMX_HOST_DOMAIN
+              value: jmxserver
+            - name: JMX_PORT
+              value: "9090"
+          resources: {}
+status: {}
