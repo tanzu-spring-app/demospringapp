@@ -51,7 +51,7 @@ public class SampleScheduleApp
 */
 
         // Create an MBeanServer
-        MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+        /*MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
 
         // Create an RMI registry on port 9090
         LocateRegistry.createRegistry(9090);
@@ -60,9 +60,7 @@ public class SampleScheduleApp
 
         // Create and start the JMXConnectorServer
         JMXConnectorServer cs = JMXConnectorServerFactory.newJMXConnectorServer(url, null, mbs);
-        cs.start();
-
-        System.out.println("JMX server started on port 9090");
+        cs.start();*/
 
         // Keep the server running
         //Thread.sleep(Long.MAX_VALUE);
