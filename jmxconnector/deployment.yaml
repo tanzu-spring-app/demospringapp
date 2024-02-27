@@ -27,7 +27,7 @@ spec:
         - containerPort: 8099
         env:
           - name: JMX_HOST_DOMAIN
-            value: "jmxdemo-app"
+            value: jmxserver-app
           - name: JMX_PORT
             value: "9090"
         resources: {}
