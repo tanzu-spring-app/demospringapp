@@ -6,7 +6,7 @@ metadata:
     appGroup: MySpringApp
   name: jmxserver-app
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: jmxserver-app
@@ -21,7 +21,7 @@ spec:
         kubernetes.io/os: linux
       restartPolicy: Always
       containers:
-      - image: jmxserver-app:1
+      - image: jmxserver-app:6
         name: jmxserver-app
         ports:
         - containerPort: 9999

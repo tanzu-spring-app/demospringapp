@@ -21,13 +21,13 @@ spec:
         kubernetes.io/os: linux
       restartPolicy: Always
       containers:
-      - image: jmxconnector-app:4
+      - image: jmxconnector-app:7
         name: jmxconnector-app
         ports:
         - containerPort: 8099
         env:
           - name: JMX_HOST_DOMAIN
-            value: jmxserver-app
+            value: 10.244.0.56
           - name: JMX_PORT
             value: "9090"
         resources: {}
