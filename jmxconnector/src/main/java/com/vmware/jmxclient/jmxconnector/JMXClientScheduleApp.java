@@ -30,7 +30,7 @@ public class JMXClientScheduleApp {
         try {
             // Define the JMX service URL
             final JMXServiceURL url = new JMXServiceURL(
-                    "service:jmx:rmi:///jndi/rmi://10.244.0.36" + ":" + portNum + "/jmxrmi");
+                    "service:jmx:rmi:///jndi/rmi://10.244.0.40" + ":" + portNum + "/jmxrmi");
             // Connect to the JMX server
             System.out.println("Trying to connect on url: "+url);
             JMXConnector jmxc = JMXConnectorFactory.connect(url, null);
